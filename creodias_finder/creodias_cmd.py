@@ -21,9 +21,7 @@ MAX_CLOUD = 70.0
 START_DATE = datetime(2016, 1, 1)
 END_DATE = datetime(2016, 12, 31)
 TILES = [
-{"name": "33UXP", "centroid_lon": 17.1, "centroid_lat": 48.2},
-{"name": "33UYP", "centroid_lon": 18.3, "centroid_lat": 48.3},
-{"name": "33UYQ", "centroid_lon": 18.3, "centroid_lat": 49.2},
+{"name": "33UXQ", "centroid_lon": 17.0, "centroid_lat": 49.2},
 ]
 
 def check_zip_file(zip_filepath):
@@ -37,7 +35,7 @@ def check_zip_file(zip_filepath):
                     return False
     except:
         print('bad zip file {}'.format(str(zip_filepath)))
-        return false
+        return False
 
 
 
